@@ -1,0 +1,25 @@
+{
+  "name": "coinsvaracity",
+  "version": "1.0.0",
+  "description": "Ethereum based crowd-sale including compliant buyer & seller management.",
+  "main": "./public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jatinchauhann/coinsvarsity.git"
+  },
+  "keywords": [
+    "blockchain",
+    "ico",
+    "ethereum",
+    "tokens"
+  ],
+  "author": "Jatin Chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jatinchauhann/coinsvarsity/issues"
+  },
+  "homepage": "https://github.com/jatinchauhann/coinsvarsity#readme"
+}
