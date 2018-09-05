@@ -2,7 +2,7 @@
   "name": "coinsvaracity",
   "version": "1.0.0",
   "description": "Ethereum based crowd-sale including compliant buyer & seller management.",
-  "main": "./public/index.html",
+  "main": "/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
