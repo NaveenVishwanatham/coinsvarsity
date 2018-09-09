@@ -134,24 +134,16 @@
             <li class="active">Your Details</li>
             <li>ICO's Details</li>
             <li>More Details</li>
+            <li>Team Details</li>
             <li>Social Accounts</li>
           </ul>
           <!-- fieldsets -->
-          <!-- More details about the ico -->
-          <fieldset>
-              <h2 class="fs-title">Details about your ICO</h2>
-              <h3 class="fs-subtitle">Some more things we'd like to know</h3>
-              <br><br> Whitelist <br><br>
-              <input type="radio" name="whitelist" value="yes" checked> Yes<br>
-              <input type="radio" name="whitelist" value="female"> No<br>
-              <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
+          
           <!-- Personal Details -->
           <fieldset>
             <h2 class="fs-title">Fill your Personal Details</h2>
             <h3 class="fs-subtitle">This is the first step</h3>
-            <input type="text" name="name" placeholder="Full Name" />
+            <input type="text" name="fullname" placeholder="Full Name" />
             <input type="text" name="email" placeholder="Email" />
             <input type="password" name="password" placeholder="Password" />
             <input type="password" name="cpassword" placeholder="Confirm Password" />
@@ -176,8 +168,40 @@
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
-          
-          <!-- Social Accounts -->
+          <!-- More details about the ico -->
+          <fieldset>
+              <h2 class="fs-title">Details about your ICO</h2>
+              <h3 class="fs-subtitle">Some more things we'd like to know</h3>
+              <input type="text" name="whitelist-bool" placeholder="Whitelist? (Yes/No)" />
+              <input type="text" name="affilation-bool" placeholder="Affilated with the ICO? (Yes/No)" />
+              <input type="text" name="kyc-bool" placeholder="KYC-Know your customer? (Yes/No)" />
+              <input type="text" name="percent-of-token" placeholder="Percentage of token for sale" />
+              <input type="text" name="accepts" placeholder="Accepts (Eg. ETC, BTC, USD)" />
+              <input type="text" name="exceptions" placeholder="Exceptions - Who can participate?" />
+              <input type="text" name="num-team-members" placeholder="Enter number of team num-team-members" />
+              <input type="text" name="prototype-name" placeholder="Prototype name" />
+              <input type="text" name="country" placeholder="Country" />
+              <br><br> Pre ICO Start Date <br><br>
+              <input type="date" name="pre-ico-start" placeholder="Pre ICO Start Date" />
+              <br><br> Pre ICO End Date <br><br>
+              <input type="date" name="pre-ico-end" placeholder="Pre ICO End Date" />
+              <input type="text" name="whitepaper" placeholder="Whitepaper URL" />
+              <input type="text" name="logo-url" placeholder="ICO Logo URL" />
+              <textarea name="ico-description" placeholder="ICO Description"></textarea>
+              <input type="button" name="previous" class="previous action-button" value="Previous" />
+              <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Team Details</h2>
+                <h3 class="fs-subtitle">What about your team</h3>
+                <input type="text" name="ceo-name" placeholder="Name of CEO" />
+                <input type="text" name="ceo-email" placeholder="Email of CEO" />
+                <input type="text" name="cmo-name" placeholder="Name of CMO" />
+                <input type="text" name="cmo-email" placeholder="Email of CMO" />
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+              </fieldset>
+            <!-- Social Accounts -->
           <fieldset>
             <h2 class="fs-title">Social Accounts</h2>
             <h3 class="fs-subtitle">Ways to reach you</h3>
@@ -187,7 +211,7 @@
             <input type="text" name="ticker" placeholder="Ticker" />
             <!-- <textarea name="address" placeholder="Address"></textarea> -->
             <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
           </fieldset>
           
 
