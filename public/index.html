@@ -17,13 +17,27 @@
   <link href="./assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(window).scroll(function(){
+      if ($(window).scrollTop() >= 150) {
+          $('#nav').addClass('logocolor');
+
+      }
+      else {
+          $('#nav').removeClass('logocolor');
+
+      }
+  });
+  </script>
 </head>
 
 <body class="index-page sidebar-collapse">
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="">
+      <div class="navbar-translate" id="nav">
+        <a class="navbar-brand" href="./index.html">
           <!-- Coins<strong>varsity</strong>  -->
           <img src="./assets/img/logo.png" alt="" width="150" >
         </a>
@@ -47,7 +61,7 @@
               <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
                 <i class="material-icons">content_paste</i> Documentation
               </a>
-            </div> 
+            </div>
           </li> -->
           <li class="nav-item">
             <a class="nav-link" href="./index.html" onclick="scrollToDownload()">
@@ -58,7 +72,7 @@
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
               <!-- <i class="material-icons">cloud_download</i> -->
-              Croudfunding
+              Start a Campaign
             </a>
           </li>
           <li class="nav-item">
@@ -68,13 +82,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./team.html" onclick="scrollToDownload()">
-              <!-- <i class="material-icons">cloud_download</i> -->
-              Team
-            </a>
-          </li>
+           <a class="nav-link" href="./team.html" onclick="scrollToDownload()">
+           <!--  <i class="material-icons">cloud_download</i>-->
+             Blog
+           </a>
+         </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+            <a class="nav-link" href="./team.html" onclick="scrollToDownload()">
               <!-- <i class="material-icons">cloud_download</i> -->
               About
             </a>
@@ -291,9 +305,9 @@
   <div class="header-filter clear-filter" data-parallax="true" style="background-image: url('./assets/img/bg2.jpg');">
     <div class="container">
         <div class="col-md-8 ml-auto mr-auto text-center">
-          <br><br>  
+          <br><br>
             <h2 style="color:white;">Publish an ICO with <strong>Coinsvarsity</strong></h2>
-            <h5 style="color:white;">Publish ICO or Pre-ICO to reach your audience and attract more investors. <br> 
+            <h5 style="color:white;">Publish ICO or Pre-ICO to reach your audience and attract more investors. <br>
               You can get listed for free with a simple 3-step procedure. <br>
               Just provide your basic info, whitepaper, roadmap, team, media and token sale details. <br>
               Join one of the leading ICO listing platforms <br>
@@ -314,7 +328,7 @@
     <div class="section section-basic">
       <div class="container">
           <h2>Live Crowd<strong>Sale</strong></h2>
-          <br><br> 
+          <br><br>
           <!-- Start of first row -->
           <div class="row">
               <div class="col-md-4">
@@ -325,10 +339,10 @@
                           <div class="col-md-4">
                               <img src="./assets/img/section-3/1.png" alt="" height="80" width="80">
                           </div>
-                          <div class="col-md-8" style="margin-top: 45px; font-size: 30px">
+                          <div class="col-md-8 CoinBundle" style="margin-top: 45px; font-size: 30px">
                               CoinBundle
                           </div>
-                      </div>
+                      </div><br>
                     <div class="text-left">
                         Category: <strong>Business</strong><br>
                         Crypto-investing available to everyone. One click. Hundreds of cryptos. Zero fees.
@@ -368,7 +382,7 @@
                             <div class="col-md-8" style="margin-top: 45px; font-size: 30px">
                                 CoinBundle
                             </div>
-                        </div>
+                        </div><br>
                       <div class="text-left">
                           Category: <strong>Business</strong><br>
                           Crypto-investing available to everyone. One click. Hundreds of cryptos. Zero fees.
@@ -385,7 +399,7 @@
                           Until <strong>Dec 31</strong>
                           <br>
                         </div>
-  
+
                       <div class="text-center">
                       <a class="btn btn-success btn-raised btn-round " href="javascript:void(0)" data-toggle="dropdown">
                           Buy <strong>Token</strong>
@@ -394,7 +408,7 @@
                     </div>
                   </div>
                   <br>
-  
+
                   <!-- End Tabs with icons on Card -->
                 </div><div class="col-md-4">
                     <!-- Tabs with icons on Card -->
@@ -407,7 +421,7 @@
                               <div class="col-md-8" style="margin-top: 45px; font-size: 30px">
                                   CoinBundle
                               </div>
-                          </div>
+                          </div><br>
                         <div class="text-left">
                             Category: <strong>Business</strong><br>
                             Crypto-investing available to everyone. One click. Hundreds of cryptos. Zero fees.
@@ -424,7 +438,7 @@
                             Until <strong>Dec 31</strong>
                             <br>
                           </div>
-    
+
                         <div class="text-center">
                         <a class="btn btn-success btn-raised btn-round " href="javascript:void(0)" data-toggle="dropdown">
                             Buy <strong>Token</strong>
@@ -433,7 +447,7 @@
                       </div>
                     </div>
                     <br>
-    
+
                     <!-- End Tabs with icons on Card -->
                   </div>
             </div>
@@ -453,7 +467,7 @@
                             <div class="col-md-8" style="margin-top: 45px; font-size: 30px">
                                 CoinBundle
                             </div>
-                        </div>
+                        </div><br>
                       <div class="text-left">
                           Category: <strong>Business</strong><br>
                           Crypto-investing available to everyone. One click. Hundreds of cryptos. Zero fees.
@@ -470,7 +484,7 @@
                           Until <strong>Dec 31</strong>
                           <br>
                         </div>
-  
+
                       <div class="text-center">
                       <a class="btn btn-success btn-raised btn-round " href="javascript:void(0)" data-toggle="dropdown">
                           Buy <strong>Token</strong>
@@ -479,7 +493,7 @@
                     </div>
                   </div>
                   <br>
-  
+
                   <!-- End Tabs with icons on Card -->
                 </div>
                 <div class="col-md-4">
@@ -493,7 +507,7 @@
                               <div class="col-md-8" style="margin-top: 45px; font-size: 30px">
                                   CoinBundle
                               </div>
-                          </div>
+                          </div><br>
                         <div class="text-left">
                             Category: <strong>Business</strong><br>
                             Crypto-investing available to everyone. One click. Hundreds of cryptos. Zero fees.
@@ -510,7 +524,7 @@
                             Until <strong>Dec 31</strong>
                             <br>
                           </div>
-    
+
                         <div class="text-center">
                         <a class="btn btn-success btn-raised btn-round " href="javascript:void(0)" data-toggle="dropdown">
                             Buy <strong>Token</strong>
@@ -519,7 +533,7 @@
                       </div>
                     </div>
                     <br>
-    
+
                     <!-- End Tabs with icons on Card -->
                   </div><div class="col-md-4">
                       <!-- Tabs with icons on Card -->
@@ -532,7 +546,7 @@
                                 <div class="col-md-8" style="margin-top: 45px; font-size: 30px">
                                     CoinBundle
                                 </div>
-                            </div>
+                            </div><br>
                           <div class="text-left">
                               Category: <strong>Business</strong><br>
                               Crypto-investing available to everyone. One click. Hundreds of cryptos. Zero fees.
@@ -549,7 +563,7 @@
                               Until <strong>Dec 31</strong>
                               <br>
                             </div>
-      
+
                           <div class="text-center">
                           <a class="btn btn-success btn-raised btn-round " href="javascript:void(0)" data-toggle="dropdown">
                               Buy <strong>Token</strong>
@@ -575,7 +589,7 @@
   <div class="header-filter clear-filter" data-parallax="true" style="background-image: url('./assets/img/bg2.jpg');">
     <div class="container">
         <div class="col-md-8 ml-auto mr-auto text-center">
-          <br><br>  
+          <br><br>
             <h2 style="color:white;"><strong>ICO marketing Services</strong><br>
                 Get the best bang for your buck <br>
                 We Can Maximize Your Marketing Budget</h2>
@@ -656,7 +670,7 @@
             <script>
               document.write(new Date().getFullYear())
             </script>
-            Coins<strong>varsity</strong>  
+            Coins<strong>varsity</strong>
         </div>
       </div>
     </footer>

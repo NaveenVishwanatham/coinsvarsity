@@ -15,16 +15,28 @@
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
     <!-- CSS Files -->
     <link href="https://coinsvarsity.com/assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="https://coinsvarsity.com/assets/demo/demo.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+        $('#nav').addClass('logocolor');
 
+    }
+    else {
+        $('#nav').removeClass('logocolor');
+
+    }
+});
 $(window).resize(function(){
 
-       if ($(window).width() <= 500) {  
+       if ($(window).width() <= 700) {
               $("#row").removeClass("row");
 			  $("#row1").removeClass("row");
               // is mobile device
@@ -32,20 +44,21 @@ $(window).resize(function(){
        } else{
 	          $("#row").addClass("row");
 			  $("#row1").addClass("row");
-	   }    
+	   }
 
 });
 </script>
+
   </head>
 
 <body class="profile-page sidebar-collapse">
-  
+
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="">
+      <div class="navbar-translate" id="nav"  >
+        <a class="navbar-brand" href="./index.html">
           <!-- Coins<strong>varsity</strong>  -->
-          <img src="https://coinsvarsity.com/assets/img/logo.png" alt="" width="150" >
+          <img src="https://coinsvarsity.com/assets/img/logo.png" alt="./index.html" width="150" >
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -67,10 +80,10 @@ $(window).resize(function(){
               <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
                 <i class="material-icons">content_paste</i> Documentation
               </a>
-            </div> 
+            </div>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="https://coinsvarsity.com/index.html" onclick="scrollToDownload()">
+            <a class="nav-link" href="./index.html" onclick="scrollToDownload()">
               <i class="material-icons">apps</i>
               Home
             </a>
@@ -78,7 +91,7 @@ $(window).resize(function(){
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
               <!-- <i class="material-icons">cloud_download</i> -->
-              Croudfunding
+              Start a Campaign
             </a>
           </li>
           <li class="nav-item">
@@ -88,17 +101,17 @@ $(window).resize(function(){
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              <!-- <i class="material-icons">cloud_download</i> -->
-              <strong>Team</strong>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              <!-- <i class="material-icons">cloud_download</i> -->
-              About
-            </a>
-          </li>
+           <a class="nav-link" href="./team.html" onclick="scrollToDownload()">
+           <!--  <i class="material-icons">cloud_download</i>-->
+             Blog
+           </a>
+         </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./team.html" onclick="scrollToDownload()">
+                <!-- <i class="material-icons">cloud_download</i> -->
+                About
+              </a>
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
               <!-- <i class="material-icons">cloud_download</i> -->
@@ -106,7 +119,7 @@ $(window).resize(function(){
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-success btn-raised btn-round text-light" href="https://coinsvarsity.com/login.html" >
+            <a class="nav-link btn btn-success btn-raised btn-round text-light" href="./login.html" >
               Register
             </a>
           </li>
@@ -132,6 +145,8 @@ $(window).resize(function(){
 
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/city-profile.jpg');"></div>
   <!-- Founder -->
+  <div class="row">
+  <div class="col-md-6 ml-auto mr-auto" >
   <div class="main main-raised">
     <div class="profile-content">
       <div class="container">
@@ -144,7 +159,7 @@ $(window).resize(function(){
               <div class="name">
                 <h3 class="title">Naveen Vishwanatham</h3>
                 <h6>Founder</h6>
-                <br><br>
+                <br>
                 <!-- <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-dribbble"></i></a>
                 <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#pablo" class="btn btn-just-icon btn-link btn-pinterest"><i class="fa fa-pinterest"></i></a> -->
@@ -158,7 +173,8 @@ $(window).resize(function(){
       </div>
     </div>
   </div>
-
+</div>
+</div>
   <br><br><br><br><br><br>
 
   <!-- first row -->
@@ -214,7 +230,7 @@ $(window).resize(function(){
             </div>
             <div class="description text-center">
               <!-- <p>An artist of considerable range, Chet Faker &#x2014; the name taken by Melbourne-raised, Brooklyn-based Nick Murphy &#x2014; writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure.  -->
-              
+
             </div>
           </div>
         </div>
@@ -224,7 +240,7 @@ $(window).resize(function(){
 
   <br><br><br><br><br><br>
   <!-- second row -->
-  
+
   <div id="row" class="row">
     <div class="col-md-6">
       <div class="main main-raised">
@@ -264,7 +280,7 @@ $(window).resize(function(){
                     <img src="https://coinsvarsity.com/assets/img/team/frontend-dev.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
                   </div>
                   <div class="name">
-                    <h3 class="title">Jatin Chauhan</h3>
+                    <h3 class="title">Ajay Kadoula</h3>
                     <h6>Front End Developer</h6>
                     <!-- <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-dribbble"></i></a>
                     <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
@@ -308,7 +324,7 @@ $(window).resize(function(){
         <script>
           document.write(new Date().getFullYear())
         </script>
-        Coins<strong>varsity</strong>  
+        Coins<strong>varsity</strong>
     </div>
   </div>
 </footer>
