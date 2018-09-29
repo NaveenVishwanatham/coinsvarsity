@@ -3,13 +3,13 @@
  =========================================================
  * Paper Bootstrap Wizard - v1.0.2
  =========================================================
- 
+
  * Product Page: https://www.creative-tim.com/product/paper-bootstrap-wizard
  * Copyright 2017 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/creativetimofficial/paper-bootstrap-wizard/blob/master/LICENSE.md)
- 
+
  =========================================================
- 
+
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
 
@@ -108,6 +108,9 @@ transparent = true;
                 $("#wizard-picture").change(function(){
                     readURL(this);
                 });
+                $("#wizard-picture1").change(function(){
+                    readURL1(this);
+                });
 
                 $('[data-toggle="wizard-radio"]').click(function(){
                     wizard = $(this).closest('.wizard-card');
@@ -141,6 +144,16 @@ transparent = true;
 
                 reader.onload = function (e) {
                     $('#wizardPicturePreview').attr('src', e.target.result).fadeIn('slow');
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function readURL1(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#wizardPicturePreview1').attr('src', e.target.result).fadeIn('slow');
                 }
                 reader.readAsDataURL(input.files[0]);
             }
