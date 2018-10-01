@@ -41,7 +41,24 @@
               <div class="form d-flex align-items-center">
                 <div class="content">
                   <form method="post" class="form-validate">
-                    <h3>Login</h3>
+			   <div class="form-group row">
+				<div class="form-check">
+					<label>
+						<input type="radio" name="radio" checked> <span class="label-text">Investor</span>
+					</label>
+				</div>
+				<div class="form-check">
+					<label>
+						<input type="radio" name="radio"> <span class="label-text">ICO Creater</span>
+					</label>
+				</div>
+				<div class="form-check">
+					<label>
+						<input type="radio" name="radio"> <span class="label-text">Public ICO</span>
+					</label>
+				</div>
+				</div>
+                    <h3>Registration</h3>
                     <div class="form-group">
                       <input id="login-username" type="text" name="loginUsername" required data-msg="Please enter your username" class="input-material">
                       <label for="login-username" class="label-material">User Name</label>
@@ -49,15 +66,9 @@
                     <div class="form-group">
                       <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="input-material">
                       <label for="login-password" class="label-material">Password</label>
-                    </div><a id="login" href="index.html" class="btn btn-primary btn-block">Login</a>
+                    </div><a id="login" href="index.html" class="btn btn-primary btn-block">SingUp</a>
 
-			      <div class="col-xs-12 col-sm-12 d-inline-block">
-				         <label class="checkbox">
-				        	<input type="checkbox" value="remember-me"> Remember me
-				          </label>
-
-						  <a href="#" class="forgot-pass">Forgot Password?</a>
-			      </div>					
+				
 					<br>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
 	   	<div class="row omb_row-sm-offset-6  omb_socialButtons">
@@ -75,7 +86,7 @@
 		        </a>
 	        </div>	
 		</div>
-                  </form><br><center><h7>Don't have an account? </h7><a href="register.html" class="signup">Sign Up</a></center>
+                  </form><br><center><h7>Want Login? </h7><a href="login.html" class="signup">Log In</a></center>
                 </div>
               </div>
             </div>
