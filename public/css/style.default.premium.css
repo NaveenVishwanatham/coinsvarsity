@@ -1672,7 +1672,7 @@ input.input-material.is-invalid ~ label {
 .login-page .form-holder div[class*='col-'] {
     padding: 0}
 .login-page .form-holder .info {
-    background-image: url("login.jpg");
+    background-image: url(./login.jpg);
     color: #fff;
 	opacity:none;}
 .login-page .form-holder .info h1 {
