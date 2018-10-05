@@ -74,7 +74,7 @@ $(window).resize(function(){
   												<div class="icon-circle">
   													<i class="ti-user"></i>
   												</div><br>
-  												Basic Info
+  												Project Details
   											</a>
   										</li>
   			              <li>
@@ -82,9 +82,17 @@ $(window).resize(function(){
   												<div class="icon-circle">
   													<i class="ti-agenda"></i>
   												</div><br>
-  												ICO details
+  												Toknomics
   											</a>
   										</li>
+                      <li>
+                        <a href="#desc" data-toggle="tab">
+                          <div class="icon-circle">
+                            <i class="ti-email"></i>
+                          </div><br>
+                          Description
+                        </a>
+                      </li>
                       <li>
                         <a href="#team" data-toggle="tab">
                           <div class="icon-circle">
@@ -102,21 +110,14 @@ $(window).resize(function(){
                         </a>
                       </li>
                       <li>
-                        <a href="#social_media" data-toggle="tab">
+                        <a href="#contact" data-toggle="tab">
                           <div class="icon-circle">
                             <i class="ti-link"></i>
                           </div><br>
                           Social Media
                         </a>
                       </li>
-                      <li>
-                        <a href="#contact" data-toggle="tab">
-                          <div class="icon-circle">
-                            <i class="ti-email"></i>
-                          </div><br>
-                          Contact
-                        </a>
-                      </li>
+
   			          </ul>
   								</div><br><br>
 
@@ -124,113 +125,35 @@ $(window).resize(function(){
   <div class="tab-pane" id="basic">
 
   <div class="form-group">
-    <label for="register">Registered Company Name:</label>
+    <label for="register">Project  Name :</label>
     <input type="text" class="form-control" id="register" required>
     <span class="highlight"></span>
     <span class="bar"></span>
   </div>
   <div class="form-group">
-    <label for="year">Registration Year:</label>
-    <input type="number" class="form-control" id="year" min="1990" max="2018" required>
+    <label for="register">ICO category   :</label>
+
+    <input type="text" class="form-control" id="register" required>
     <span class="highlight"></span>
     <span class="bar"></span>
-  </div>
- <div class="form-group">
-    <label for="supply">Total supply:</label>
-    <input type="text" class="form-control" id="supply" required>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="form-group">
-    <label for="currency">Accepted Currencies:</label>
-    <input type="text" class="form-control" id="currency" required>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="form-group">
-    <label for="contribution">Min contribution size:</label>
-    <input type="text" class="form-control" id="contribution" required>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="form-group">
-    <label for="cont_curr">Contribution Currency</label>
-    <select class="form-control" id="cont_curr" required>
-	  <option>Select</option>
-      <option>#</option>
-      <option>#</option>
-      <option>#</option>
-      <option>#</option>
-      <option>#</option>
-    </select>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-</div>
-<div class="tab-pane" id="ICO_Details">
-  <div class="form-group">
-  <div class="form-group">
-    <label for="ICOname">ICO Name:</label>
-    <input type="text" class="form-control" id="ICOname" required>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-	<div class="form-group">
-    <label for="ico_category">ICO Category</label>
-    <select class="form-control" id="ico_category" required>
-	  <option selected>Select ICO Category</option>
-      <option>#</option>
-      <option>#</option>
-      <option>#</option>
-      <option>#</option>
-      <option>#</option>
-    </select>
-  </div>
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <div class="custom-file">
-  <input type="file" class="custom-file-input" id="logo" required>
-  <label class="custom-file-label" for="logo">Choose logo</label>
-  <span class="highlight"></span>
-  <span class="bar"></span>
-</div>
-    </div>
-    <div class="form-group col-md-6">
-      <div class="custom-file">
-  <input type="file" class="custom-file-input" id="icon" required>
-  <label class="custom-file-label" for="icon">Choose Icon</label>
-  <span class="highlight"></span>
-  <span class="bar"></span>
-</div>
-</div>
-</div>
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="abt_ico">About ICO:</label>
-       <textarea class="form-control" rows="2" id="abt_ico" required></textarea>
-       <span class="highlight"></span>
-       <span class="bar"></span>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="description">Description:</label>
-      <textarea class="form-control" rows="2" id="description" required></textarea>
-      <span class="highlight"></span>
-      <span class="bar"></span>
-    </div>
   </div>
   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="token_distribution">Token Distribution:</label>
-      <textarea class="form-control" rows="2" id="token_distribution" required></textarea>
-      <span class="highlight"></span>
-      <span class="bar"></span>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="ico_period">ICO Period:</label>
-      <textarea class="form-control" rows="2" id="ico_period" required></textarea>
-      <span class="highlight"></span>
-      <span class="bar"></span>
-    </div>
+      <div class="form-group col-md-6">
+    <div class="custom-file">
+    <input type="file" class="custom-file-input" id="logo" required>
+    <label class="custom-file-label" for="logo">Choose logo</label>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+  </div>
+  </div>
+ <div class="form-group col-md-6">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="icon" required>
+    <label class="custom-file-label" for="icon">Choose Icon</label>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+  </div>
+  </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -246,15 +169,8 @@ $(window).resize(function(){
       <span class="bar"></span>
     </div>
   </div>
-  <script type="text/javascript">
-  $('.datepicker').datepicker({
-     weekStart:1,
-     color: 'green'
-  });
-  </script>
-<br>
-  <div class="form-check " >
-  <div class="form-group col-md-6" style="margin-left:-30px;" >
+  <div class="form-group row " >
+  <div class="col-md-6"  >
   <label class="form-check-label">
     <input type="checkbox" class="form-check-input" value="">Pre Sale:
   </label>
@@ -269,109 +185,139 @@ $(window).resize(function(){
   <span class="bar"></span>
 </div>
 </div>
-<br>
+<div class="form-group text-danger"><label for="KYC">Ico stage  drop down    (presale or sale) :- </label></div>
+
+<div class="form-group">
+ <label for="KYC">KYC required for your ICO:</label><br><br>
+<div class="form-group col-md-6" class="form-check-inline">
+<label class="form-check-label">
+  <input type="radio" class="form-check-input" name="optradio">Yes
+</label>
+<span class="highlight"></span>
+<span class="bar"></span>
+</div>
+
+<div class="form-group col-md-6" class="form-check-inline">
+<label class="form-check-label">
+  <input type="radio" class="form-check-input" name="optradio">No
+</label>
+<span class="highlight"></span>
+<span class="bar"></span>
+</div>
+</div>
+<div class="form-group">
+  <label for="restrict">Restricted Countries to participate</label>
+  <select multiple class="form-control" id="restrict">
+    <option>USA</option>
+    <option>China</option>
+    <option>Japan</option>
+    <option>Pakistan</option>
+    <option>France</option>
+  </select>
+  <span class="highlight"></span>
+  <span class="bar"></span>
+</div>
+  <script type="text/javascript">
+  $('.datepicker').datepicker({
+     weekStart:1,
+     color: 'green'
+  });
+  </script>
+</div>
+
+<div class="tab-pane" id="ICO_Details">
   <div class="form-group">
-     <label for="goal">Goal:</label>
-    <input type="text" class="form-control" id="goal" required>
+  <div class="form-group">
+    <label for="description" >Token Description:</label>
+    <textarea class="form-control" rows="2" id="description" required></textarea>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+  </div>
+	<div class="form-group">
+    <label for="ICOname">Total supply:</label>
+    <input type="text" class="form-control"  required/>
     <span class="highlight"></span>
     <span class="bar"></span>
   </div>
   <div class="form-group">
-     <label for="cp">Cap:</label>
-    <input type="text" class="form-control" id="cp" required>
+    <label for="ICOname">Accepted Currencies :</label>
+    <input type="text" class="form-control"  required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+  </div>
 
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="Goal">Goal:</label>
+       <input type="text" class="form-control"  required>
+       <span class="highlight"></span>
+       <span class="bar"></span>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Cap">Cap:</label>
+       <input type="text" class="form-control"  required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="Used">Used blockchain  :</label>
+    <input type="text" class="form-control"placeholder="(Ethereum, Omni, building a new one, other)" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+  </div>
+
+
+
+  <div class="form-group">
+     <label for="goal">Smart contract eth address(Important for better ICO Ranking.   ) </label>
+    <input type="text" class="form-control" placeholder="Example:0x0b1ae337a9d0f62c9026effcfdcee442e3ce31e6" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+  </div>
+  <div class="form-group">
+     <label for="raised">Raised:</label>
+    <input type="text" class="form-control" id="cp" required>
     <span class="highlight"></span>
     <span class="bar"></span>
   </div>
    <div class="form-group">
-     <label for="Used">Used Blockchain:</label>
-    <input type="text" class="form-control" id="Used" placeholder="Ethereum,Omni,Building a new, other"/>
+     <label for="Used">Price of token :</label>
+    <input type="text" class="form-control" id="Used"/>
     <span class="highlight"></span>
     <span class="bar"></span>
   </div>
+
+
+
+
+</div>
+</div>
+<div class="tab-pane" id="desc">
   <div class="form-group">
-     <label for="smart">Smart contract eth address:</label>
-    <input type="text" class="form-control" id="smart" placeholder="Important for better ICO Ranking. Example:0x0b1ae337a9d0f62c9026ffcfdcee442e3ce31e6"/>
+    <label for="description" >Description:</label>
+    <textarea class="form-control" rows="2" id="description" required></textarea>
     <span class="highlight"></span>
     <span class="bar"></span>
   </div>
+
   <div class="form-group">
-     <label for="token">Token Symbol:</label>
-    <input type="text" class="form-control" id="token"/>
+      <label for="web">Website Link:</label>
+     <input type="text" class="form-control" id="web"/>
+
+     <span class="highlight"></span>
+     <span class="bar"></span>
+   </div>
+   <div class="form-group">
+      <label for="white">Link to Whitepaper:</label>
+    <input type="text" class="form-control" id="white"/>
     <span class="highlight"></span>
     <span class="bar"></span>
-  </div>
-  <div class="form-group">
-     <label for="price">Price of token:</label>
-    <input type="text" class="form-control" id="price"/>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="form-group">
-   <label for="KYC">KYC required for your ICO:</label><br>
-<div class="form-group col-md-6" class="form-check-inline">
-  <label class="form-check-label">
-    <input type="radio" class="form-check-input" name="optradio">Yes
-  </label>
-  <span class="highlight"></span>
-  <span class="bar"></span>
+   </div>
+
+
 </div>
 
-<div class="form-group col-md-6" class="form-check-inline">
-  <label class="form-check-label">
-    <input type="radio" class="form-check-input" name="optradio">No
-  </label>
-  <span class="highlight"></span>
-  <span class="bar"></span>
-</div>
-</div>
-<div class="form-group">
-    <label for="restrict">Restricted Countries to participate</label>
-    <select multiple class="form-control" id="restrict">
-      <option>USA</option>
-      <option>China</option>
-      <option>Japan</option>
-      <option>Pakistan</option>
-      <option>France</option>
-    </select>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
- <div class="form-group">
-     <label for="web">Website Link:</label>
-    <input type="text" class="form-control" id="web"/>
-
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="form-group">
-     <label for="bounty">Bounty Link:</label>
-    <input type="text" class="form-control" id="bounty"/>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="form-group">
-     <label for="Air">Airdrop Link:</label>
-    <input type="text" class="form-control" id="Air"/>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="form-group">
-     <label for="price">Link to MVP or prototype:</label>
-    <input type="text" class="form-control" id="price"/>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-  </div>
-  <div class="form-group">
-     <label for="white">Link to Whitepaper:</label>
-	 <input type="text" class="form-control" id="white"/>
-   <span class="highlight"></span>
-   <span class="bar"></span>
-  </div>
-  <center><button type="ADD" class="btn btn-next btn-fill btn-warning btn-wd" onclick="">Add More ICO</button></center><br/>
-  <div id="addmore"></div>
-</div>
-</div>
 <div class="tab-pane" id="team">
   <div class="form-group">
 <div class="row span-12">
@@ -495,36 +441,6 @@ $('.datepicker').datepicker({
    <button class="btn btn-primary">Add One More Step</button><br/>
  </div><br>
 </div>
-<div class="tab-pane" id="social_media">
-  <div class="form-group">
-   <div class="form-group col-md-6">
-     <label for="Link">LinkedIn:</label>
-     <input type="text" class="form-control" id="Link"/>
-     <span class="highlight"></span>
-     <span class="bar"></span>
-   </div>
-   <div class="form-group col-md-6">
-     <label for="sky">Skype:</label>
-     <input type="text" class="form-control" id="sky"/>
-     <span class="highlight"></span>
-     <span class="bar"></span>
-   </div>
- <div class="form-group col-md-6">
-     <label for="Tele">Telegram:</label>
-     <input type="text" class="form-control" id="Tele"/>
-     <span class="highlight"></span>
-     <span class="bar"></span>
-</div>
- <div class="form-group col-md-6">
-     <label for="git">Github:</label>
-     <input type="text" class="form-control" id="git"/>
-     <span class="highlight"></span>
-     <span class="bar"></span>
-  </div>
- </div>
- <button class="btn btn-primary">ADD More</button><br/>
-
-</div>
 <div class="tab-pane" id="contact">
 
   <div class="form-group">
@@ -539,7 +455,7 @@ $('.datepicker').datepicker({
     <span class="highlight"></span>
     <span class="bar"></span>
   </div>
-  <div class="form-group">
+  <div class="form-group" class="border border-dark">
     <label for="year">Social Media Contact:</label>
     <div class="form-row">
     <div class="form-group col-md-6">
@@ -560,12 +476,18 @@ $('.datepicker').datepicker({
       <span class="highlight"></span>
       <span class="bar"></span>
     </div>
+    <div class="form-group col-md-6">
+        <label for="git">Github:</label>
+        <input type="text" class="form-control" id="git"/>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+     </div>
+  </div>
+  <div class="form-group">
+ <button class="btn btn-primary">ADD More</button><br/>
   </div>
 </div>
-  <div class="form-group">
-    <label for="CPerson">Contact Person Name:</label>
-    <input type="text" class="form-control" id="CPerson">
-  </div>
+
   <div class="form-group">
 
     <label for="CPerson">

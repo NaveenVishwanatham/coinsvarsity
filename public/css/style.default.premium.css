@@ -8,16 +8,16 @@ body {
     height: 100%;
     background: linear-gradient(to bottom, #48d276 0%, #33cccc 100%);
     z-index: 1;
-	border:1px solid black;
+	border:1px solid #33cccc;
 }
 .omb_socialButtons a {
-	color: white; 
-	
+	color: white;
+
 
 }
  .omb_socialButtons a:hover {
     color: white;
-	opacity:1;    	
+	opacity:1;
 }
  .omb_socialButtons .omb_btn-facebook {background: #3b5998; margin-left:20px;}
  .omb_socialButtons .omb_btn-google {background: #c32f10; margin-left:60px;}
@@ -189,7 +189,7 @@ button,input {
 .lh-2 {
     line-height: 2}
 .page {
-	
+
     background: #ffffffff}
 .page .text-white {
     color: #fff}
@@ -1692,7 +1692,7 @@ input.input-material.is-invalid ~ label {
     margin-bottom: 20px;
 	padding:15px;
     cursor: pointer;
-	
+
 	}
 .login-page .form-holder .form a.forgot-pass{
 		float:right;
