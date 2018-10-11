@@ -1,3 +1,36 @@
 .logocolor{
-	background-color: #4caf50;
+	background: linear-gradient(to right, #0066cc 0%, #36e37f 100%);
+}
+.get-start{
+	border-radius:20px;
+}
+.img-fluidd{
+	height:500px;
+}
+.sec-03{
+		height:500px;
+}
+.fadeInRightt{
+    border-left: 1px solid grey;
+    padding-left:70px;
+
+}
+.my-4{
+	background-color:grey;
+}
+.iconfirst{
+	height:70px;
+	width:70px;
+}
+@media only screen and (max-width: 768px) {
+	.h-img{
+		display:none;
+	}
+}
+.my-4{
+	display: none;
+}
+.iconn{
+	width:20px;
+	height:20px;
 }
