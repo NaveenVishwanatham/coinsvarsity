@@ -22,15 +22,37 @@
 	height:70px;
 	width:70px;
 }
-@media only screen and (max-width: 768px) {
-	.h-img{
-		display:none;
-	}
-}
+
 .my-4{
 	display: none;
 }
 .iconn{
 	width:20px;
 	height:20px;
+}
+.pg-head{
+	font-size:35px;
+	font-family:  sans-serif;
+}
+.pg-head-b{
+	font-size:25px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+	.h-img{
+		display:none;
+	}
+	.pg-head{
+	font-size:25px;
+	text-align:center;
+     }
+    .pg-head-b{
+	font-size:20px;
+    }
+	.pg-head-bb{
+	text-align:center;
+    }
+	.page-header{
+		    height: 50vh;
+	}
 }

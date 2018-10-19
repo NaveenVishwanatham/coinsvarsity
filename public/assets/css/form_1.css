@@ -162,16 +162,7 @@ transition: .2s all linear;
     top: -32px;
     z-index: 100;
 }
-.nav-pills > li > a {
-    padding: 0;
-    max-width: 78px;
-    margin: 0 auto;
-    color: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    position: relative;
-    top: -32px;
-    z-index: 100;
-}
+
 .nav-pills {
     background-color: #F3F2EE;
     position: absolute;
