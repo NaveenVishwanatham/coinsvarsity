@@ -22,11 +22,15 @@
   <script>
   $(window).scroll(function(){
       if ($(window).scrollTop() >= 150) {
-          $('#nav').addClass('logocolor');
 
+		  $('#logo').addClass('logo');
+          $('#logo1').removeClass('logo');
       }
       else {
-          $('#nav').removeClass('logocolor');
+
+		  $('#logo').removeClass('logo1');
+		  $('#logo1').addClass('logo');
+		  $('#logo').removeClass('logo');
 
       }
   });
@@ -39,7 +43,9 @@
       <div class="navbar-translate" id="nav">
         <a class="navbar-brand" href="./index.html">
           <!-- Coins<strong>varsity</strong>  -->
-          <img src="./assets/img/logo.png" alt="" width="150" >
+          <img  id="logo"src="./assets/img/logo.png" alt="" width="150" >
+		  <img  class="logo" id="logo1"src="./assets/img/logo_dark.png" alt="" width="150" >
+
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
